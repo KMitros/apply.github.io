@@ -1,0 +1,9 @@
+._lighter {
+    color: $color-gray;
+}
+
+@media only screen and (max-width: 480px) {
+    ._hidden {
+        display: none;
+    }
+}

@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    .section {
+        & {
+            margin-bottom: 70px;
+        }
+        .section-head {
+            font-family: $font-family__primary;
+            font-size: 24px;
+            font-weight: $font-weigth__heavier;
+
+            margin-bottom: 35px;
+
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .static-block {
+        & {
+            display: flex;
+
+            flex-wrap: wrap;
+        }
+        .column {
+            & {
+                display: flex;
+                flex-direction: column;
+            }
+            .img-fix {
+                vertical-align: bottom;
+            }
+
+            .item {
+                & {
+                    position: relative;
+                }
+
+                > .descr {
+                    & {
+                        font-family: $font-family__primary;
+
+                        position: absolute;
+                        top: 33%;
+                        right: 11%;
+
+                        max-width: 140px;
+                    }
+
+                    .category {
+                        font-size: 11px;
+                        font-weight: $font-weigth__heavier;
+
+                        margin-bottom: 15px;
+
+                        text-transform: uppercase;
+                    }
+
+                    .name {
+                        font-size: 19px;
+                        font-weight: $font-weigth__regular;
+
+                        margin-bottom: 40px;
+                    }
+
+                    .price {
+                        font-size: 24px;
+                        font-weight: $font-weigth__heavier;
+                    }
+                }
+
+                .sale {
+                    & {
+                        top: 70%;
+                        right: 0;
+
+                        text-align: right;
+
+                        color: $color-secondary;
+                    }
+                    .terms {
+                        font-size: 11px;
+                        font-weight: $font-weigth__heavier;
+
+                        display: inline-block;
+
+                        margin-bottom: 15px;
+                        padding: 10px;
+
+                        text-transform: uppercase;
+
+                        background-color: $color-primary;
+                    }
+
+                    .off {
+                        font-size: 20px;
+                        font-weight: $font-weigth__regular;
+
+                        padding: 9px 10px 10px 10px;
+
+                        background-color: #df0101;
+                    }
+                }
+
+                > .slider-head {
+                    font-family: $font-family__primary;
+                    font-size: 20px;
+                    font-weight: $font-weigth__heavier;
+                    text-transform: uppercase;
+
+                    position: absolute;
+                    top: 7%;
+                    left: 50%;
+
+                    transform: translateX(-50%);
+                }
+
+                > .shop-now {
+                    font-family: $font-family__primary;
+                    font-size: 13px;
+                    font-weight: $font-weigth__heavier;
+
+                    position: absolute;
+                    bottom: 10%;
+                    left: 50%;
+
+                    padding: 15px 35px;
+
+                    transform: translateX(-50%);
+                    text-transform: uppercase;
+
+                    color: $color-secondary;
+                    background-color: $color-primary;
+                }
+
+                > .guide-head {
+                    font-family: $font-family__additional;
+                    font-size: 58px;
+                    font-weight: $font-weigth__regular;
+
+                    position: absolute;
+                    top: 35%;
+                    left: 8%;
+
+                    width: 80%;
+
+                    color: $color-secondary;
+                }
+
+                > .lookbook {
+                    font-family: $font-family__primary;
+                    font-size: 12px;
+                    font-weight: $font-weigth__bold;
+
+                    position: absolute;
+                    top: 61%;
+                    left: 50%;
+
+                    transform: translateX(-50%);
+                    text-transform: uppercase;
+
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1200px) {
+    .main {
+        .static-block {
+            & {
+                justify-content: center;
+            }
+
+            .right {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .main {
+        .flex-row {
+            justify-content: space-around;
+        }
+
+        .static-block {
+            & {
+                justify-content: center;
+            }
+
+            .right {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .main {
+        .flex-row {
+            justify-content: space-around;
+        }
+        .static-block {
+            .right {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .main {
+        .static-block {
+            .right {
+                flex-direction: column;
+            }
+        }
+    }
+}

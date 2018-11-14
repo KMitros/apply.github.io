@@ -1,0 +1,30 @@
+// fonts settings
+
+$font-weigth__light: 300;
+$font-weigth__regular: 400;
+$font-weigth__heavier: 500;
+$font-weigth__semi-bold: 600;
+$font-weigth__bold: 700;
+$font-weigth__extra-bold: 800;
+
+$font_roboto: 'Roboto';
+$font_opensans: 'OpenSans';
+$font_eyeswideopen: 'EyesWideOpen';
+$font-family__sans-serif: sans-serif;
+$font-family__primary: $font_roboto, $font-family__sans-serif;
+$font-family__secondary: $font_opensans, $font-family__sans-serif;
+$font-family__additional: $font_eyeswideopen, $font-family__sans-serif;
+
+
+// color settings
+
+
+$color-white: #fff;
+$color-1-0: #1c1c1c;
+$color-1-2: #e5e5e5;
+$color-1-3: #a9a9a9;
+
+$color-primary: $color-1-0;
+$color-secondary: $color-white;
+$color-additional: $color-1-2;
+$color-gray: $color-1-3;
